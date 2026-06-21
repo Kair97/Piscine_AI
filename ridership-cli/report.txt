@@ -1,0 +1,4 @@
+Group: Red
+  count: 0 | sum: 0 | mean: 0.00 | min: 0 | max: 0
+Group: Blue
+  count: 0 | sum: 0 | mean: 0.00 | min: 0 | max: 0
