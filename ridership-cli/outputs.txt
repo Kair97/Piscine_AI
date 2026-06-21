@@ -1,0 +1,20 @@
+python analyze.py ridership.csv
+Total rows: 16
+Passengers — count: 16 | sum: 15030 | mean: 939.38 | min: 700 | max: 1310
+
+python analyze.py ridership.csv --filter line=Red --filter direction=inbound
+Total rows: 4
+Passengers — count: 4 | sum: 4800 | mean: 1200.00 | min: 1100 | max: 1310
+
+python analyze.py ridership.csv --min-passengers 900 --group-by line
+Group: Red
+  count: 7 | sum: 7710 | mean: 1101.43 | min: 920 | max: 1310
+Group: Blue
+  count: 1 | sum: 900 | mean: 900.00 | min: 900 | max: 900
+
+python analyze.py ridership.csv --filter date=2024-03-01 --group-by direction --output report.txt
+Group: inbound
+  count: 4 | sum: 4020 | mean: 1005.00 | min: 810 | max: 1240
+Group: outbound
+  count: 4 | sum: 3330 | mean: 832.50 | min: 700 | max: 980
+
