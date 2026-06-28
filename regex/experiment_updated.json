@@ -1,0 +1,19 @@
+{
+  "experiment_id": "exp_042",
+  "hyperparameters": {
+    "max_depth": 5,
+    "min_samples_split": 2,
+    "n_estimators": 100
+  },
+  "metrics": {
+    "f1_score": 0.8801,
+    "test_accuracy": 0.8876,
+    "train_accuracy": 0.9412
+  },
+  "model": "random_forest",
+  "status": "completed",
+  "tags": [
+    "baseline",
+    "no_feature_eng"
+  ]
+}

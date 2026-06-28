@@ -1,0 +1,13 @@
+data:
+  target_column: label
+  test_path: data/test.csv
+  train_path: data/train.csv
+experiment_id: run_007
+model:
+  name: xgboost
+  version: '1.7'
+training:
+  early_stopping_rounds: 10
+  learning_rate: 0.01
+  max_depth: 6
+  n_estimators: 200
